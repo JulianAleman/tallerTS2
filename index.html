@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="module" src='./scripts/main.js'></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">SERIES</h1>
+        <div class="row">
+            <div class="col-md-6" id="centrado">
+                <table class="table table-striped" id="series">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Plataforma</th>
+                            <th scope="col">Temporadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <div id="serie-detail" class="card" style="display: none;" >
+                    <div class="card-body">
+                      <img id="serie-imagen" class="card-img_top" >
+                        <h5 class="card-title" id="serie-titulo"></h5>
+                        <h6 class="card-subtitle mb-2 text-muted" id="serie-plataforma"></h6>
+                        <p class="card-text" id="serie-descripcion"></p>
+                        <a id="serie-enlace" href="#" class="card-link">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
